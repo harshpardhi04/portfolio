@@ -1,0 +1,226 @@
+@media screen and (min-width:1200px) {
+    .sidebar-toggle{
+        display: none;
+    }
+}
+
+@media screen and (max-width:1199px) {
+    .sidebar-toggle{
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        display: flex;
+        flex-direction: column;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        z-index: 9999 !important;
+        width: 60px;
+    }
+
+    .sidebar-toggle span{
+        background-color: #fff;
+        border-radius: 10px;
+        height: 5px;
+        margin: 7px 0;
+        transition: 0.7s all;
+    }
+
+    .sidebar-toggle span:nth-of-type(1){
+        width: 50%;
+    }
+    .sidebar-toggle span:nth-of-type(2){
+        width: 100%;
+    }
+    .sidebar-toggle span:nth-of-type(3){
+        width: 75%;
+    }
+
+    .sidebar-toggle.active span:nth-of-type(1){
+        transform-origin: bottom;
+        transform: rotateZ(45deg) translate(8px , 0px);
+    }
+
+    .sidebar-toggle.active span:nth-of-type(2){
+        transform-origin: top;
+        transform: rotateZ(-45deg);
+    }
+
+    .sidebar-toggle.active span:nth-of-type(3){
+        transform-origin: bottom;
+        transform: translate(28px , -10px) rotateZ(45deg) ;
+        width: 50%;
+    }
+
+    .homepage .sidebar{
+        left: -100%;
+        opacity: 0;
+        transition: all 0.7s;
+    }
+
+    .homepage .sidebar.active{
+        left: 0;
+        opacity: 1;
+        z-index: 999;
+    }
+
+    .homepage .content{
+        width: 100%;
+        margin-left: 0;
+    }
+    
+}
+
+@media screen and (max-width:991px) {
+    .section-title h1{
+        font-size: 70px;
+    }
+
+    .homepage .about-me .right-part{
+        margin-top: 30px;
+    }
+
+    .homepage .about-me .right-part .box{
+        width: 48%;
+    }
+
+    .homepage .skills img{
+        margin-bottom: 30px;
+    }
+
+    .homepage .skills h6,
+    .homepage .skills .progress{
+        width: 100%;
+    }
+
+    .experience .timeline{
+        margin-bottom: 30px;
+    }
+
+    .homepage .contacts .left-part{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .homepage .contacts .form-group{
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width:767px) {
+    .homepage .sidebar{
+        width: 100%;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-top: 100px;
+        overflow: auto;
+    }
+
+    .homepage .sidebar .social-links{
+        text-align: left;
+        justify-content: flex-start;
+        margin-bottom: 30px;
+    }
+
+    .homepage .sidebar nav {
+        margin-bottom: 30px;
+    }
+
+    .homepage .sidebar nav li{
+        padding: 0;
+    }
+
+    .homepage .sidebar .copyright p{
+        font-size: 12px;
+    }
+
+    .section-title h1{
+        font-size: 30px;
+    }
+
+    .section-title{
+        margin-bottom: 50px;
+    }
+
+    .homepage .about-me .left-part .btn,
+    .homepage .about-me .right-part .box,
+    .homepage .skills .btn,
+    .homepage .contacts .submit .btn{
+        width: 100%;
+    }
+
+    .homepage .content .overlay h3 span{
+        text-align: center;
+    }
+
+    .homepage .content .overlay p{
+        width: 90%;
+    }
+
+    .homepage .about-me .full-part{
+        flex-direction: column;
+    }
+
+    .homepage .about-me .full-part .box{
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #919294;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+
+    .homepage .experience{
+        padding-top: 60px;
+    }
+
+    .experience .timeline{
+        margin-top: 30px;
+        margin-bottom: 0;
+    }
+
+    .homepage .experience .timeline .timeline-item{
+        flex-direction: column;
+        margin-bottom: 24px;
+    }
+
+    .homepage .experience .timeline .timeline-item .left-part,
+    .homepage .experience .timeline .timeline-item .right-part{
+        width: 100%;
+    }
+
+    .homepage .experience .timeline .timeline-item .right-part{
+        margin-left: 20px;
+    }
+
+    .homepage .experience .timeline .timeline-item .left-part{
+        text-align: left;
+        margin-bottom: 32px;
+    }
+
+    .homepage .experience .timeline h1{
+        padding: 0;
+    }
+
+    .homepage .works .filter-button-group .btn{
+        width: 100%;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    .homepage .contacts .left-part{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:570px) {
+    .section-title h3{
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .section-title h1{
+        font-size: 22px;
+    }
+}
