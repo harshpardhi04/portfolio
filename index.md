@@ -36,5 +36,6 @@ Customizable Design:  Tailor the app's look and feel to perfectly match your caf
 
 With this Flutter-powered cafe POS app, I aim to provide a comprehensive solution that empowers cafes to run more efficiently, enhance customer satisfaction, and ultimately, brew their dream business! ☕✨
 
-![Now!](https://github.com/harshpardhi04/portfolio/assets/137109404/4a06476d-a12c-4e6d-9ec4-15f041a537b0)
+![Minimalist Desktop Wallpaper](https://github.com/harshpardhi04/portfolio/assets/137109404/c3b24765-1b8e-4cb7-95a6-3e866d3fa1df)
+
 
